@@ -1,10 +1,15 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "RobotFriends",
+    "short_name": "Just a list of robot friends.",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
             "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],
