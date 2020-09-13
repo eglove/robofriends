@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import {requestRobots, setSearchField} from '../actions';
-import MainPage from '../components/MainPage';
+import React, {Component} from 'react'
+import {connect} from 'react-redux'
+import {requestRobots, setSearchField} from '../actions'
+import MainPage from '../components/MainPage'
 
 const mapStateToProps = state => {
 	return {
@@ -25,4 +25,4 @@ class App extends Component {
 	}
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App)

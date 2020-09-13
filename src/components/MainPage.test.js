@@ -1,8 +1,8 @@
-import {shallow} from 'enzyme';
-import MainPage from './MainPage';
-import React from 'react';
+import {shallow} from 'enzyme'
+import MainPage from './MainPage'
+import React from 'react'
 
-let wrapper;
+let wrapper
 beforeEach(() => {
 	const mockProps = {
 		onRequestRobots: jest.fn(),
@@ -14,8 +14,8 @@ beforeEach(() => {
 })
 
 it('should render mainPage', function () {
-	expect(wrapper).toMatchSnapshot();
-});
+	expect(wrapper).toMatchSnapshot()
+})
 
 it('should filter robots correctly', function () {
 	const mockProps = {
@@ -29,13 +29,13 @@ it('should filter robots correctly', function () {
 		isPending: false,
 	}
 
-	const wrapper = shallow(<MainPage {...mockProps} />);
+	const wrapper = shallow(<MainPage {...mockProps} />)
 	expect(wrapper.instance().filterRobots([])).toEqual([{
 		id: 3,
 		name: 'Jon',
 		email: 'john@gmail.com'
-	}]);
-});
+	}])
+})
 
 it('should filter robots correctly', function () {
 	const mockProps = {
@@ -49,7 +49,7 @@ it('should filter robots correctly', function () {
 		isPending: false,
 	}
 
-	const filteredRobots = [];
-	const wrapper = shallow(<MainPage {...mockProps} />);
-	expect(wrapper.instance().filterRobots([])).toEqual(filteredRobots);
-});
+	const filteredRobots = []
+	const wrapper = shallow(<MainPage {...mockProps} />)
+	expect(wrapper.instance().filterRobots([])).toEqual(filteredRobots)
+})

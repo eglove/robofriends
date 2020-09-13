@@ -1,4 +1,4 @@
-import React, {PureComponent} from 'react';
+import React, {PureComponent} from 'react'
 
 class Header extends PureComponent {
 	render() {
@@ -6,8 +6,8 @@ class Header extends PureComponent {
 			<>
 				<h1 className='f1'>RoboFriends</h1>
 			</>
-		);
+		)
 	}
 }
 
-export default Header;
+export default Header
